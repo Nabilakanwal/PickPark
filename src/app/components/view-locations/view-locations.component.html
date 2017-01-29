@@ -1,0 +1,25 @@
+<div class="backgroundTheme">
+
+<div class="displayData"  *ngFor = 'let p of BookingLocSpaces'>
+  <label for="location">Location :</label>
+   {{p.bookLocation}} 
+    <br/>
+   <label for="slot">Number of Slots :</label>
+    {{p.slot}}
+
+   <button type="button" class="btn btn-primary" [routerLink]="['/bookSlot' , p.$key]" > View </button>
+
+</div>
+<br/>
+
+<!--
+<ul>
+  <li *ngFor = 'let p of BookingLocSpaces'> 
+
+    {{p.bookLocation}}
+    <br/>
+    {{p.slot}}
+  </li>
+</ul>-->
+
+</div>

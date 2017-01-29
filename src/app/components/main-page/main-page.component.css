@@ -1,0 +1,19 @@
+.navbarText {
+  font-weight: bold;
+  font-size: 20pt;
+  margin-left: 3em;
+}
+nav{
+    background-color: gray !important;
+}
+.menuDiv {
+  display: inline-block;
+  /*float: right;*/
+}
+.menuBtns{
+    color: black;
+    font-size: 30px;
+}
+.startPageBody{
+  background-image: url(./../P1.jpg);
+}

@@ -1,0 +1,26 @@
+<div class="backgroundTheme">
+<form #BookingForm="ngForm"  class="form-horizontal">
+  <fieldset>
+
+
+    <legend class="heading">Pick Park Booking</legend>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="bookLocation">Book Your Location </label>
+      <div class="col-md-4">
+        <input id="location" name="bookLocation" type="text" placeholder="Location Name" class="form-control input-md" ngModel>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="slot">Slots</label>
+      <div class="col-md-4">
+        <input id="noOfSlot" name="slot" type="number" placeholder="Add Slots" class="form-control input-md" ngModel>
+      </div>
+    </div>
+
+      <div class="col-md-4">
+        <button type="button" class="btn btn-success" (click) = "addLocation($event,BookingForm.value)">Add Loction</button>
+      </div>
+  </fieldset>
+</form>
+
+</div>
